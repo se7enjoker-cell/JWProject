@@ -227,7 +227,7 @@
                         <div class="container">
                                 
                             <form action="{{ route('update') }}" method="post" enctype="multipart/form-data">
-                                {{csrf_field}}
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}" />   
                                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                                     <h1 class="h3 mb-0 text-gray-800">Content</h1>
                                 </div>                           
