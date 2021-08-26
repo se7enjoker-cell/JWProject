@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,4 +21,9 @@ Route::get('/welcome', function () {
 Route::get('test', function () {
     return 1111;
 });
+
+Route::get('content',[HomeController::class,'getUpdate']);
+
+Route::post('update',[HomeController::class,'update'])->name('update');
+
 
