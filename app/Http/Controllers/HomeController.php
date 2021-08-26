@@ -12,12 +12,11 @@ class HomeController extends Controller
    }
 
    public function update(Request $re){
-    dd(11111);
-
     $var = $re->select1;
     $file = $re->filesTest;
     $destinationPath = public_path('/images');
     $file->move($destinationPath,$file->getClientOriginalName());
+    dd("success");
     // dd($destinationPath);
     // $abou = About::find(2);
     // $abou->font = $re->select1;
