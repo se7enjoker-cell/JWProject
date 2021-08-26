@@ -11,12 +11,12 @@ class HomeController extends Controller
         return view('content');
    }
 
-   public function update(Request $re){
-    dd("success");
-    $var = $re->select1;
-    $file = $re->filesTest;
-    $destinationPath = public_path('/images');
-    $file->move($destinationPath,$file->getClientOriginalName());
+   public function update(Request $request){
+    dd($request->content_image);
+    // $var = $re->select1;
+    // $file = $re->filesTest;
+    // $destinationPath = public_path('/images');
+    // $file->move($destinationPath,$file->getClientOriginalName());
     // dd($destinationPath);
     // $abou = About::find(2);
     // $abou->font = $re->select1;
