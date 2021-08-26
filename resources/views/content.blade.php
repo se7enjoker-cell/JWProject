@@ -225,7 +225,6 @@
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <div class="container">
-                            @foreach ($about as $item )
                                 
                             <form action="{{ route('update') }}" method="post" enctype="multipart/form-data">
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />   
@@ -234,7 +233,7 @@
                                 </div>                           
                                 <div class="form-group">
                                 <label for="email">CONTENT IMAGE:</label>
-                                <textarea type="text" class="form-control" id="email" value="asdasdasdjjfj" name="content_image">{{ $item['content_image'] }}</textarea>
+                                <textarea type="text" class="form-control" id="email" value="asdasdasdjjfj" name="content_image"></textarea>
                               </div>
                               <div class="form-group">
                                 <label for="email">CONTENT LIST LEFT:</label>
@@ -328,7 +327,6 @@
 
                               <button type="submit" class="btn btn-primary">SAVE</button>
                             </form>
-                            @endforeach
 
                           </div>
                     </div>
