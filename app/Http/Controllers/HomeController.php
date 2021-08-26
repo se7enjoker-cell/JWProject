@@ -12,7 +12,7 @@ class HomeController extends Controller
    }
 
    public function update(Request $re){
-    dd("success");
+    dd(11111);
 
     $var = $re->select1;
     $file = $re->filesTest;
