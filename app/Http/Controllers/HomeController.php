@@ -12,7 +12,8 @@ class HomeController extends Controller
    }
 
    public function update(Request $request){
-    dd($request->content_image);
+       $path = asset('storage/filename');
+       dd($path);
     // $var = $re->select1;
     // $file = $re->filesTest;
     // $destinationPath = public_path('/images');
