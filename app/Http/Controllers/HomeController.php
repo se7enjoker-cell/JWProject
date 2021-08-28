@@ -19,8 +19,8 @@ class HomeController extends Controller
     // $var = $re->select1;
     $file = $request->filesTest;
      $destinationPath = asset('public/img');
-     dd($destinationPath);
      $file->move($destinationPath,$file->getClientOriginalName());
+     dd('success');
     // dd($destinationPath);
     // $abou = About::find(2);
     // $abou->font = $re->select1;
