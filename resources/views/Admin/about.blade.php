@@ -225,7 +225,6 @@
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <div class="container">
-                            @foreach ($about as $item )
                                 
                             <form action="{{ route('update') }}" method="post" enctype="multipart/form-data">
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />   
@@ -328,7 +327,6 @@
 
                               <button type="submit" class="btn btn-primary">SAVE</button>
                             </form>
-                            @endforeach
 
                           </div>
                     </div>
