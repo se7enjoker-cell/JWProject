@@ -90,6 +90,7 @@
     <!-- Page Wrapper -->
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
+            img
             <img src="{{asset('public/img/51.jpg')}}" alt="Girl in a jacket" width="500" height="600">
 
 
