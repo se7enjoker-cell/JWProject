@@ -233,7 +233,7 @@
                                 </div>                           
                                 <div class="form-group">
                                 <label for="email">CONTENT IMAGE:</label>
-                                <textarea type="text" class="form-control" id="email" value="asdasdasdjjfj" name="content_image">{{ $item['content_image'] }}</textarea>
+                                <textarea type="text" class="form-control" id="email" value="asdasdasdjjfj" name="content_image"></textarea>
                               </div>
                               <div class="form-group">
                                 <label for="email">CONTENT LIST LEFT:</label>
