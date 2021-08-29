@@ -12,15 +12,20 @@ class HomeController extends Controller
    }
 
    public function update(Request $request){
+    $path = $request->file('filesTest')->store('public/img');
+
+    return $path;
+
     //    $path = asset('storage/filename');
     //    dd($path);
 //     $path = $request->file('filesTest')->store('public/img');
 // dd($path);
     // $var = $re->select1;
-    $file = $request->filesTest;
-     $destinationPath = asset('public/img');
-     $file->move($destinationPath,$file->getClientOriginalName());
-     dd('success');
+    // $file = $request->filesTest;
+    // File::create([
+
+    // ]);
+    //  $file->move($destinationPath,$file->getClientOriginalName());
     // dd($destinationPath);
     // $abou = About::find(2);
     // $abou->font = $re->select1;
@@ -29,6 +34,6 @@ class HomeController extends Controller
     // $abou->title =$re->title;
     // $abou->content_image =$re->content_image;
     // $abou->save();
-    return redirect('content')->with('success', 'Task was successful!');
+    // return redirect('content')->with('success', 'Task was successful!');
 }
 }
