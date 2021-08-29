@@ -8,7 +8,7 @@ class HomeController extends Controller
 {
     public function getUpdate(){
         // $about = About::all();
-        return view('content');
+        return view('Admin/about');
    }
 
    public function update(Request $request){
