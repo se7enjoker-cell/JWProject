@@ -314,8 +314,8 @@
                                     </option>                                
                                 </select>
 
-                                
-                              </div>
+                                <img src="{{asset('public/img/51.jpg')}}" alt="Girl in a jacket" width="500" height="600">
+                            </div>
 
                               <div class="d-sm-flex align-items-center justify-content-between mb-4">
                                 <h1 class="h3 mb-0 text-gray-800">Images</h1>
