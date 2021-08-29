@@ -14,15 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
 
-Route::get('test', function () {
-    return 1111;
-});
 
-Route::get('content',[HomeController::class,'getUpdate']);
+Route::get('about',[HomeController::class,'getUpdate']);
 
 Route::post('update',[HomeController::class,'update'])->name('update');
 
