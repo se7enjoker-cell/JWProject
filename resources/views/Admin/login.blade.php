@@ -22,7 +22,7 @@
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-gradient-muted">
 
     <div class="container">
 
@@ -36,7 +36,7 @@
                         <!-- Nested Row within Card Body -->
                         <div class="row">
                             <div class="col-lg-6 d-none d-lg-block">
-                                <img src="images/about.jpeg">
+                                <img src="images/about.jpeg" width="450px">
                             </div>
                             <div class="col-lg-6">
                                 <div class="p-5">
