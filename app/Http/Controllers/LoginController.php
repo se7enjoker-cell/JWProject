@@ -14,6 +14,13 @@ class LoginController extends Controller
         $credentials = $request->only(
             'username', 'password'
         );
-        dd($credentials);
-    }
+        if (Auth::attempt($credentials)) {
+            // Authentication passed...
+            dd(123);
+            // return redirect()->intended('dashboard');
+        }
+        else{
+            dd(456);
+        }
+     }
 }
