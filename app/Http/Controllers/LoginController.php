@@ -13,7 +13,16 @@ class LoginController extends Controller
 {
     public function authenticate(Request $request)
     {
-        $user = User::all();
-        dd($user);
+        $credentials = $request->only(
+            'username', 'password'
+        );
+        if (Auth::attempt($credentials)) {
+            // Authentication passed...
+            dd(123);
+            // return redirect()->intended('dashboard');
+        }
+        else{
+            dd(456);
+        }
      }
 }
