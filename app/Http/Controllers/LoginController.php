@@ -11,10 +11,9 @@ class LoginController extends Controller
 {
     public function authenticate(Request $request)
     {
-        $credentials = $request->only([
-            'username' => ['required', 'username'],
-            'password' => ['required'],
-        ]);
+        $credentials = $request->only(
+            'email', 'password'
+        );
         dd($credentials);
     }
 }
