@@ -24,7 +24,7 @@ Route::get('login',function(){
     return view('Admin.login');
 });
 
-Route::get('update',function(){
+Route::get('updated',function(){
     return view('Admin.update');
 });
 
