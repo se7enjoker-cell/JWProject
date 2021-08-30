@@ -28,6 +28,7 @@ Route::get('dasboard',function(){
     return view('Admin.dasboard');
 });
 
+Route::post('authenticate',[LoginController::class,'authenticate'])->name('authenticate');
 
 
 
