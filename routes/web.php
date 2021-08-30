@@ -24,6 +24,10 @@ Route::get('login',function(){
     return view('Admin.login');
 });
 
+Route::get('update',function(){
+    return view('Admin.update');
+});
+
 
 
 
