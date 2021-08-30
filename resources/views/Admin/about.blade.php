@@ -196,8 +196,8 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                            class="fas fa-download fa-sm text-white-50"></i> Collections</a>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm"><i
+                            class="fas fa-backward fa-sm text-white-50"></i> Collections</a>
                     </div>
 
                     <!-- Content Row -->
@@ -325,7 +325,7 @@
                               </div>
 
 
-                              <button type="button" class="btn btn-success btn-block">Button 1</button>
+                              <button type="button" class="btn btn-success btn-block">SAVE</button>
                             </form>
 
                           </div>
