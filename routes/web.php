@@ -20,4 +20,10 @@ Route::get('about',[HomeController::class,'getUpdate']);
 
 Route::post('update',[HomeController::class,'update'])->name('update');
 
+Route::get('login',function(){
+    return view('Admin.login');
+});
+
+
+
 
