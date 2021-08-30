@@ -307,7 +307,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer" style="margin-top: -30px">
+            <footer class="sticky-footer" style="margin-top:-100px">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <section class="ftco-section">
