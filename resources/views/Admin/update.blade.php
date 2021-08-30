@@ -450,9 +450,9 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
           <a href="#">Font</a>
-          <a href="{{ route('text') }}">Text</a>
+          <a href="#">Text</a>
           <a href="#">Contact</a>
-          <a href="">Films/Images</a>
+          <a href="#">Films/Images</a>
         </div>
       </div>
 
