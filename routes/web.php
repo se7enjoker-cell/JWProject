@@ -24,8 +24,8 @@ Route::get('login',function(){
     return view('Admin.login');
 });
 
-Route::get('updated',function(){
-    return view('Admin.update');
+Route::get('dasboard',function(){
+    return view('Admin.dasboard');
 });
 
 
