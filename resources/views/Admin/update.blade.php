@@ -108,7 +108,7 @@
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
+                                <button class="btn btn-success" type="button">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
                             </div>
@@ -199,11 +199,11 @@
 
                         <!-- Earnings (Monthly) Card Example -->
                         <a href="" class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
+                            <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 Home</div>
                                         </div>
                                         <div class="col-auto">
@@ -250,11 +250,11 @@
 
                         <!-- Pending Requests Card Example -->
                         <a href="" class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
+                            <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 Blog</div>
                                         </div>
                                         <div class="col-auto">
@@ -266,11 +266,11 @@
                         </a>
 
                         <a href="" class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
+                            <div class="card border-left-success shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 Films</div>
                                         </div>
                                         <div class="col-auto">
@@ -307,7 +307,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer">
+            <footer class="sticky-footer" style="margin-top: -30px">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <section class="ftco-section">
@@ -445,16 +445,6 @@
     </div>
 
 
-
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-          <a href="#">Font</a>
-          <a href="#">Text</a>
-          <a href="#">Contact</a>
-          <a href="#">Films/Images</a>
-        </div>
-      </div>
 
 
       <script>
