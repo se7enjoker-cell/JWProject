@@ -325,7 +325,7 @@
                               </div>
 
 
-                              <button type="button" class="btn btn-success btn-block">SAVE</button>
+                              <button type="submit" class="btn btn-success btn-block">SAVE</button>
                             </form>
 
                           </div>
