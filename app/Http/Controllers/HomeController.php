@@ -18,7 +18,9 @@ class HomeController extends Controller
 
       $path = asset('images');
     $file = $request->filesTest;
-    $file->move($path,$file->getClientOriginalName());
+    // $file->move($path,$file->getClientOriginalName());
+    $location = storage_path('app/images/', $file->getClientOriginalName());
+    dd($location);
     // dd($destinationPath);
     // $abou = About::find(2);
     // $abou->font = $re->select1;
