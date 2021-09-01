@@ -12,23 +12,8 @@ class HomeController extends Controller
    }
 
    public function update(Request $request){
-    // $path = $request->file('filesTest')->store('public/img');
-
-    // return $path;
-
-      $path = asset('images');
-    $file = $request->filesTest;
-    // $file->move($path,$file->getClientOriginalName());
-    $location = storage_path('app/images/', $file->getClientOriginalName());
-    dd($location);
-    // dd($destinationPath);
-    // $abou = About::find(2);
-    // $abou->font = $re->select1;
-    // $abou->content_list_left = $re->content_list_left;
-    // $abou->content_list_right =$re->content_list_right;
-    // $abou->title =$re->title;
-    // $abou->content_image =$re->content_image;
-    // $abou->save();
-    // return redirect('content')->with('success', 'Task was successful!');
-}
+        $file_name = $request->file('filesTest')->getClientOriginalName();
+        $request->file('filesTest')->move('public/images',$file_name);
+        dd('success');
+    }
 }
