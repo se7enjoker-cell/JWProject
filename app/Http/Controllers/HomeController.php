@@ -13,7 +13,7 @@ class HomeController extends Controller
 
    public function update(Request $request){
         $file_name = $request->file('filesTest')->getClientOriginalName();
-        $request->file('filesTest')->move('public/images',$file_name);
+        $request->file('filesTest')->move('images',$file_name);
         dd('success');
     }
 }
