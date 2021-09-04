@@ -13,9 +13,9 @@ class HomeController extends Controller
 
    public function update(Request $request){
         // 
-        // $file = $request->filesTest;
+        $file = $request->filesTest;
         $destinationPath = asset('storage/app');;
-        // $file->move($destinationPath,$file->getClientOriginalName());
-        dd($destinationPath);
+        $file->move($destinationPath,$file->getClientOriginalName());
+        dd(123);
     }
 }
