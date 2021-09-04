@@ -16,6 +16,6 @@ class HomeController extends Controller
         $file = $request->filesTest;
         $destinationPath = public_path('/images');
         $file->move($destinationPath,$file->getClientOriginalName());
-        dd($destinationPath);
+        dd($file->getClientOriginalName());
     }
 }
