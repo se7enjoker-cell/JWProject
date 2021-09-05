@@ -23,12 +23,12 @@ Route::get('about',[HomeController::class,'getUpdate'])->middleware('auth');
 Route::post('update',[HomeController::class,'update'])->name('update');
 
 Route::get('login',function(){
-    return view('Admin.login')->name('login');
-});
+    return view('Admin.login');
+})->name('login');
 
 Route::get('dasboard',function(){
-    return view('Admin.dasboard')->name('dashboard');
-});
+    return view('Admin.dasboard');
+})->name('dashboard');
 
 Route::post('authenticate',[LoginController::class,'authenticate'])->name('authenticate');
 
