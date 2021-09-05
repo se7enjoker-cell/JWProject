@@ -29,7 +29,7 @@ Route::post('login',[LoginController::class,'authenticate'])->name('authenticate
 
 
 Route::group(['prefix' => 'admin'], function () {
-    Route::get('about',[HomeController::class,'getUpdate'])->middleware('auth');
+    Route::get('about',[HomeController::class,'getUpdate'])->name('about')->middleware('auth');
     
     Route::post('update',[HomeController::class,'update'])->name('update');
 
