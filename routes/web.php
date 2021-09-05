@@ -36,8 +36,6 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('dashboard',function(){
         return view('Admin.dasboard');
     })->name('dashboard');
-
-
 });
 
 
