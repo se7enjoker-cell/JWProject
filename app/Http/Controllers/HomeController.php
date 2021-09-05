@@ -13,9 +13,13 @@ class HomeController extends Controller
 
    public function update(Request $request){
         // 
+        // $file = $request->filesTest;
+        // $destinationPath = public_path('/images');
+        // $file->move($destinationPath,$file->getClientOriginalName());
+        // dd($file->getClientOriginalName());
+        $des_path = 'public';
         $file = $request->filesTest;
-        $destinationPath = public_path('/images');
-        $file->move($destinationPath,$file->getClientOriginalName());
-        dd($file->getClientOriginalName());
+        $name = $file->getClientOriginalName();
+        $path = $request->filesTest->storeAs($des_path,$name);
     }
 }
