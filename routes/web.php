@@ -18,7 +18,7 @@ use App\Http\Controllers\LoginController;
 
 
 
-Route::get('about',[HomeController::class,'getUpdate']);
+Route::get('about',[HomeController::class,'getUpdate'])->middleware('auth');
 
 Route::post('update',[HomeController::class,'update'])->name('update');
 
