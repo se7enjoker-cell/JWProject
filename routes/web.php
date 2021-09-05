@@ -27,7 +27,7 @@ Route::get('login',function(){
 });
 
 Route::get('dasboard',function(){
-    return view('Admin.dasboard');
+    return view('Admin.dasboard')->name('dashboard');
 });
 
 Route::post('authenticate',[LoginController::class,'authenticate'])->name('authenticate');

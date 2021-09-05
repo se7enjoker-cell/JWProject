@@ -18,11 +18,9 @@ class LoginController extends Controller
         );
         if (Auth::attempt($credentials)) {
             // Authentication passed...
-            dd(123);
-            // return redirect()->intended('dashboard');
+            return redirect()->intended('dashboard');
         }
         else{
-            dd(456);
-        }
+            return route('login');        }
      }
 }
