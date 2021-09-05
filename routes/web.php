@@ -18,20 +18,26 @@ use App\Http\Controllers\LoginController;
 
 
 
-Route::get('about',[HomeController::class,'getUpdate'])->middleware('auth');
 
-Route::post('update',[HomeController::class,'update'])->name('update');
 
 Route::get('login',function(){
     return view('Admin.login');
 })->name('login');
 
-Route::get('dashboard',function(){
-    return view('Admin.dasboard');
-})->name('dashboard');
-
-Route::post('authenticate',[LoginController::class,'authenticate'])->name('authenticate');
+Route::post('login',[LoginController::class,'authenticate'])->name('authenticate');
 
 
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('about',[HomeController::class,'getUpdate'])->middleware('auth');
+    
+    Route::post('update',[HomeController::class,'update'])->name('update');
+
+    Route::get('dashboard',function(){
+        return view('Admin.dasboard');
+    })->name('dashboard');
+
+
+});
 
 
